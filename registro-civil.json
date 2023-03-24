@@ -48,7 +48,7 @@
       "responses": [
         {
           "uuid": "4e286496-4273-45dc-a81d-e677be69440f",
-          "body": "{\n  \"message\": \"Hello World\"\n}",
+          "body": "{\n  \"message\": \"HELLO WORLD\"\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
