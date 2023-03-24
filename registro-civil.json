@@ -1,0 +1,237 @@
+{
+  "uuid": "17f147f0-9572-4d32-842c-8c78eeb5a42f",
+  "lastMigration": 27,
+  "name": "Registro",
+  "endpointPrefix": "",
+  "latency": 200,
+  "port": 3201,
+  "hostname": "",
+  "folders": [
+    {
+      "uuid": "50adc803-b3f7-41fe-a583-c778b216b982",
+      "name": "Auth",
+      "collapsed": true,
+      "children": [
+        {
+          "type": "route",
+          "uuid": "dd0f6df3-c4d1-401a-b45b-d3c1c9a03cde"
+        },
+        {
+          "type": "route",
+          "uuid": "8eb0af76-b1af-4f65-871e-f7a6cbc0d92e"
+        }
+      ]
+    },
+    {
+      "uuid": "28c9a403-e67a-41c3-b9c1-b8cc1095cec5",
+      "name": "User",
+      "collapsed": true,
+      "children": [
+        {
+          "type": "route",
+          "uuid": "d0db0c6c-160e-444b-9bba-5fb6653ab06d"
+        },
+        {
+          "type": "route",
+          "uuid": "09ea378c-6091-432e-8eca-a8c51ab918dd"
+        }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "uuid": "9951073c-7510-401a-8b35-9d8e0cd4b79a",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "",
+      "responses": [
+        {
+          "uuid": "4e286496-4273-45dc-a81d-e677be69440f",
+          "body": "{\n  \"message\": \"Hello world\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "dd0f6df3-c4d1-401a-b45b-d3c1c9a03cde",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "api/auth/login",
+      "responses": [
+        {
+          "uuid": "01d21a0e-c317-4df7-82aa-91eb7bd3c0f7",
+          "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"message\": \"OK\",\n  \"status\": 200,\n  \"errors\": null,\n  \"data\": [{\n    \n    \"jwtToken\": \"JWT.TOKEN.123456789\"\n  }]\n  \n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "8eb0af76-b1af-4f65-871e-f7a6cbc0d92e",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "identity/api/user/me",
+      "responses": [
+        {
+          "uuid": "2041ab89-ba08-4c8f-8dfe-decd3277110a",
+          "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"message\": \"OK\",\n  \"status\": 200,\n  \"errors\": null,\n  \"data\": [{}]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "d0db0c6c-160e-444b-9bba-5fb6653ab06d",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "identity/api/user",
+      "responses": [
+        {
+          "uuid": "4b928055-97e4-434c-b505-bcafb297e398",
+          "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"status\": 200\n  \"message\": \"OK\"\n  \"errors\": null\n  \"data\": [\n    {{#repeat 50}}\n    {      {\n    \"id\": \"{{faker 'datatype.uuid'}}\",\n    \"email\": \"{{faker 'internet.email'}}\",\n    \"firstname\": \"{{faker 'name.firstName'}}\",\n    \"lastname\": \"{{faker 'name.lastName'}}\"\n    \"identification\": \"{{faker 'datatype.number' min=1100000000 max=9915875791}}\"\n  }\n    {{/repeat}}\n  ]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "ogri",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "09ea378c-6091-432e-8eca-a8c51ab918dd",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "identity/api/user/:id",
+      "responses": [
+        {
+          "uuid": "579a4753-b440-4c89-a357-d19c091d50e4",
+          "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"status\": 200\n  \"message\": \"OK\"\n  \"errors\": null\n  \"data\": [{      {\n    \"id\": \"{{faker 'datatype.uuid'}}\",\n    \"email\": \"{{faker 'internet.email'}}\",\n    \"firstname\": \"{{faker 'name.firstName'}}\",\n    \"lastname\": \"{{faker 'name.lastName'}}\"\n    \"identification\": \"{{faker 'datatype.number' min=1100000000 max=9915875791}}\"\n  }]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "ogri",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "9951073c-7510-401a-8b35-9d8e0cd4b79a"
+    },
+    {
+      "type": "folder",
+      "uuid": "50adc803-b3f7-41fe-a583-c778b216b982"
+    },
+    {
+      "type": "folder",
+      "uuid": "28c9a403-e67a-41c3-b9c1-b8cc1095cec5"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": [
+    {
+      "uuid": "2630fd16-eb01-4257-83bb-2038a5445890",
+      "id": "ogri",
+      "name": "User",
+      "documentation": "",
+      "value": "[\n  {{#repeat 50}}\n  {\n    \"id\": \"{{faker 'datatype.uuid'}}\",\n    \"email\": \"{{faker 'internet.email'}}\",\n    \"firstname\": \"{{faker 'name.firstName'}}\",\n    \"lastname\": \"{{faker 'name.lastName'}}\"\n    \"identification\": \"{{faker 'datatype.number' min=1100000000 max=9915875791}}\"\n  }\n  {{/repeat}}\n]"
+    }
+  ]
+}
