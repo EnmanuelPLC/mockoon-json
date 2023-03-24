@@ -1,5 +1,5 @@
 {
-  "uuid": "17f147f0-9572-4d32-842c-8c78eeb5a42f",
+  "uuid": "ae58d1b7-728b-4580-8229-700509cfd25b",
   "lastMigration": 27,
   "name": "Registro",
   "endpointPrefix": "",
@@ -8,117 +8,117 @@
   "hostname": "",
   "folders": [
     {
-      "uuid": "50adc803-b3f7-41fe-a583-c778b216b982",
+      "uuid": "81995b3e-4801-4847-9747-20ff84185128",
       "name": "Auth",
       "collapsed": true,
       "children": [
         {
           "type": "route",
-          "uuid": "dd0f6df3-c4d1-401a-b45b-d3c1c9a03cde"
+          "uuid": "4690972c-7ced-404d-bfac-9002a43ca8b5"
         },
         {
           "type": "route",
-          "uuid": "8eb0af76-b1af-4f65-871e-f7a6cbc0d92e"
+          "uuid": "bc58d955-537c-4081-8d23-f67a7e07a191"
         }
       ]
     },
     {
-      "uuid": "28c9a403-e67a-41c3-b9c1-b8cc1095cec5",
+      "uuid": "97263bab-6ce8-40ec-a28c-b71e622c8f3d",
       "name": "User",
       "collapsed": true,
       "children": [
         {
           "type": "route",
-          "uuid": "d0db0c6c-160e-444b-9bba-5fb6653ab06d"
+          "uuid": "98abe43c-7de2-4237-8086-27d45f49d88d"
         },
         {
           "type": "route",
-          "uuid": "09ea378c-6091-432e-8eca-a8c51ab918dd"
+          "uuid": "d3779d4d-c4ea-4dab-af7a-68c16e49fdb8"
         }
       ]
     },
     {
-      "uuid": "f3f464ca-ab43-4314-9889-ecd3441fda1e",
+      "uuid": "fb36c62d-eb31-44ab-8518-c1d672591868",
       "name": "Procedure",
       "collapsed": true,
       "children": [
         {
           "type": "route",
-          "uuid": "c21253db-220e-4153-a22d-742d47b9f68a"
+          "uuid": "a1df9b5b-5dea-4733-b23c-9fa0439cbb30"
         },
         {
           "type": "route",
-          "uuid": "3b1f002e-2c9c-4274-b68d-e67a2ff0d59d"
+          "uuid": "08143ff1-01a2-45d5-bec8-339acb526d7c"
         },
         {
           "type": "route",
-          "uuid": "41fdb1a2-543a-48db-9de9-3b4bda3b7717"
+          "uuid": "155be1ca-100d-4a3a-8e8d-7291e823127f"
         }
       ]
     },
     {
-      "uuid": "1af94a79-ef79-4866-8d1e-be96996eb51e",
+      "uuid": "63e2ff71-0a70-4447-a96c-4daa4cdd5081",
       "name": "Schedule",
-      "collapsed": false,
+      "collapsed": true,
       "children": [
         {
           "type": "route",
-          "uuid": "35b471bd-9cd1-4678-b166-7817af61a78f"
+          "uuid": "591ef123-7234-4b16-bf81-84fcd4677c9d"
         },
         {
           "type": "route",
-          "uuid": "58d0ccd0-51fd-4433-b2c3-2046342b6ba8"
+          "uuid": "3245d725-70f9-4dc5-a313-2529bd78e92b"
         },
         {
           "type": "route",
-          "uuid": "a522c343-fd85-48f0-96ee-9488c3392b50"
+          "uuid": "82a7a60d-ff00-48a0-a74b-f7bf59ff0cd0"
         },
         {
           "type": "route",
-          "uuid": "d841b280-b6d8-4c58-945f-aad3732b5f82"
+          "uuid": "0a7ec83a-f470-49b5-a224-b504159ffa1b"
         },
         {
           "type": "route",
-          "uuid": "492e6a3f-e59d-4f14-9f48-8bc1dbe9556a"
+          "uuid": "2d5af6c6-3e3c-4db4-b907-de780a759087"
         },
         {
           "type": "route",
-          "uuid": "c7119bc8-3ff5-4772-8c33-aec799ddcaa7"
+          "uuid": "a76fb164-4e4a-45f0-a991-45f2af740726"
         },
         {
           "type": "route",
-          "uuid": "9fccdf4d-2351-4e58-8f77-ea53304b207a"
+          "uuid": "97cd11e1-4956-4262-ae8d-153444a7291e"
         },
         {
           "type": "route",
-          "uuid": "8c2385ac-ae98-4a6b-99a2-2f03553fb8c7"
+          "uuid": "5b46c9a9-f46e-458a-8eaf-fb3ecf318d1c"
         },
         {
           "type": "route",
-          "uuid": "656100ff-acc3-4dd3-9eef-169fec461c8b"
+          "uuid": "3c606fb5-c76c-401a-8a3e-b609a583a57d"
         },
         {
           "type": "route",
-          "uuid": "7f1ca89e-a66e-443c-9266-cfd60aedc704"
+          "uuid": "6d867a89-cd80-4ee2-a4e4-dd69f1a4723e"
         },
         {
           "type": "route",
-          "uuid": "e6a65e5e-9014-4e34-b73b-f2222797dcde"
+          "uuid": "ca205ca3-bc2e-4dfb-b39e-b11e54233732"
         }
       ]
     }
   ],
   "routes": [
     {
-      "uuid": "9951073c-7510-401a-8b35-9d8e0cd4b79a",
+      "uuid": "20ac06db-9f48-4e7b-a5bf-73eef42c8104",
       "type": "http",
       "documentation": "",
       "method": "get",
       "endpoint": "",
       "responses": [
         {
-          "uuid": "4e286496-4273-45dc-a81d-e677be69440f",
-          "body": "{\n  \"message\": \"Hello world\"\n}",
+          "uuid": "da188bf1-d019-4a35-8653-93a6123dcfb8",
+          "body": "{\n  \"message\": \"Hola Mundo\"\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -138,14 +138,14 @@
       "responseMode": null
     },
     {
-      "uuid": "dd0f6df3-c4d1-401a-b45b-d3c1c9a03cde",
+      "uuid": "4690972c-7ced-404d-bfac-9002a43ca8b5",
       "type": "http",
       "documentation": "",
       "method": "post",
       "endpoint": "api/auth/login",
       "responses": [
         {
-          "uuid": "01d21a0e-c317-4df7-82aa-91eb7bd3c0f7",
+          "uuid": "0382b72e-cdb8-44c6-b7e8-18fe911e7b62",
           "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"message\": \"OK\",\n  \"status\": 200,\n  \"errors\": null,\n  \"data\": [{\n    \n    \"jwtToken\": \"JWT.TOKEN.123456789\"\n  }]\n  \n}",
           "latency": 0,
           "statusCode": 200,
@@ -166,14 +166,14 @@
       "responseMode": null
     },
     {
-      "uuid": "8eb0af76-b1af-4f65-871e-f7a6cbc0d92e",
+      "uuid": "bc58d955-537c-4081-8d23-f67a7e07a191",
       "type": "http",
       "documentation": "",
       "method": "get",
       "endpoint": "identity/api/user/me",
       "responses": [
         {
-          "uuid": "2041ab89-ba08-4c8f-8dfe-decd3277110a",
+          "uuid": "afb36de6-3c93-403d-b965-68c2c2042a07",
           "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"message\": \"OK\",\n  \"status\": 200,\n  \"errors\": null,\n  \"data\": [{}]\n}",
           "latency": 0,
           "statusCode": 200,
@@ -194,14 +194,14 @@
       "responseMode": null
     },
     {
-      "uuid": "d0db0c6c-160e-444b-9bba-5fb6653ab06d",
+      "uuid": "98abe43c-7de2-4237-8086-27d45f49d88d",
       "type": "http",
       "documentation": "",
       "method": "get",
       "endpoint": "identity/api/user",
       "responses": [
         {
-          "uuid": "4b928055-97e4-434c-b505-bcafb297e398",
+          "uuid": "928403cd-faec-4ee3-9ead-895dab4c2940",
           "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"status\": 200\n  \"message\": \"OK\"\n  \"errors\": null\n  \"data\": [\n    {{#repeat 50}}\n    {      {\n    \"id\": \"{{faker 'datatype.uuid'}}\",\n    \"email\": \"{{faker 'internet.email'}}\",\n    \"firstname\": \"{{faker 'name.firstName'}}\",\n    \"lastname\": \"{{faker 'name.lastName'}}\"\n    \"identification\": \"{{faker 'datatype.number' min=1100000000 max=9915875791}}\"\n  }\n    {{/repeat}}\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
@@ -222,14 +222,14 @@
       "responseMode": null
     },
     {
-      "uuid": "09ea378c-6091-432e-8eca-a8c51ab918dd",
+      "uuid": "d3779d4d-c4ea-4dab-af7a-68c16e49fdb8",
       "type": "http",
       "documentation": "",
       "method": "get",
       "endpoint": "identity/api/user/:id",
       "responses": [
         {
-          "uuid": "579a4753-b440-4c89-a357-d19c091d50e4",
+          "uuid": "9f22b345-2fdc-438c-bb38-b742df0b5e6d",
           "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"status\": 200\n  \"message\": \"OK\"\n  \"errors\": null\n  \"data\": [{\n    \"id\": \"{{faker 'datatype.uuid'}}\",\n    \"email\": \"{{faker 'internet.email'}}\",\n    \"firstname\": \"{{faker 'name.firstName'}}\",\n    \"lastname\": \"{{faker 'name.lastName'}}\"\n    \"identification\": \"{{faker 'datatype.number' min=1100000000 max=9915875791}}\"\n  }]\n}",
           "latency": 0,
           "statusCode": 200,
@@ -250,14 +250,14 @@
       "responseMode": null
     },
     {
-      "uuid": "3b1f002e-2c9c-4274-b68d-e67a2ff0d59d",
+      "uuid": "08143ff1-01a2-45d5-bec8-339acb526d7c",
       "type": "http",
       "documentation": "",
       "method": "get",
       "endpoint": "api/procedure_type",
       "responses": [
         {
-          "uuid": "c60604c1-245f-40af-9cd0-9994ce52ee8e",
+          "uuid": "56292c14-f256-4ddc-864c-eb8cf51d7857",
           "body": "",
           "latency": 0,
           "statusCode": 200,
@@ -283,14 +283,14 @@
       "responseMode": null
     },
     {
-      "uuid": "c21253db-220e-4153-a22d-742d47b9f68a",
+      "uuid": "a1df9b5b-5dea-4733-b23c-9fa0439cbb30",
       "type": "http",
       "documentation": "",
       "method": "put",
       "endpoint": "api/procedure_type",
       "responses": [
         {
-          "uuid": "e646c5a8-329b-48fe-a72e-6fe09e5f195f",
+          "uuid": "1d161847-c4f2-4b7b-8a69-d39b2fed0837",
           "body": "",
           "latency": 0,
           "statusCode": 200,
@@ -316,14 +316,14 @@
       "responseMode": null
     },
     {
-      "uuid": "41fdb1a2-543a-48db-9de9-3b4bda3b7717",
+      "uuid": "155be1ca-100d-4a3a-8e8d-7291e823127f",
       "type": "http",
       "documentation": "",
       "method": "post",
       "endpoint": "api/procedure_type",
       "responses": [
         {
-          "uuid": "174fc28a-56bf-4ca1-b58e-ad9fd139eac9",
+          "uuid": "c5c342ea-9b72-4ebf-82f8-8c948720b180",
           "body": "{\n  \"id\": {{faker 'datatype.number'}},\n  \"command\": \"\"\n}",
           "latency": 0,
           "statusCode": 200,
@@ -349,14 +349,14 @@
       "responseMode": null
     },
     {
-      "uuid": "d841b280-b6d8-4c58-945f-aad3732b5f82",
+      "uuid": "0a7ec83a-f470-49b5-a224-b504159ffa1b",
       "type": "http",
       "documentation": "",
       "method": "post",
       "endpoint": "api/schedule/program",
       "responses": [
         {
-          "uuid": "c129e27e-b35b-44f3-a1c0-6351dc0a07de",
+          "uuid": "ef0568fd-5304-4121-981d-5377bba855d0",
           "body": "{\n  \"created\": {\n    \"additionalProp1\": [\n      \"string\"\n    ],\n    \"additionalProp2\": [\n      \"string\"\n    ],\n    \"additionalProp3\": [\n      \"string\"\n    ]\n  },\n  \"command\": \"string\"\n}",
           "latency": 0,
           "statusCode": 200,
@@ -382,14 +382,14 @@
       "responseMode": null
     },
     {
-      "uuid": "35b471bd-9cd1-4678-b166-7817af61a78f",
+      "uuid": "591ef123-7234-4b16-bf81-84fcd4677c9d",
       "type": "http",
       "documentation": "",
       "method": "get",
       "endpoint": "api/schedule",
       "responses": [
         {
-          "uuid": "4b74bec0-ed7e-431c-b452-313af4d90de6",
+          "uuid": "472a118a-73b2-4d25-b992-974285c3697c",
           "body": "{\n  \"message\": \"string\",\n  \"data\": [\n    {}\n  ],\n  \"totalPages\": 0,\n  \"totalElementsPage\": 0,\n  \"totalElements\": 0,\n  \"size\": 0,\n  \"number\": 0\n}",
           "latency": 0,
           "statusCode": 200,
@@ -415,14 +415,14 @@
       "responseMode": null
     },
     {
-      "uuid": "58d0ccd0-51fd-4433-b2c3-2046342b6ba8",
+      "uuid": "3245d725-70f9-4dc5-a313-2529bd78e92b",
       "type": "http",
       "documentation": "",
       "method": "put",
       "endpoint": "api/schedule",
       "responses": [
         {
-          "uuid": "0996685c-6ca6-40db-ab5c-d64534090244",
+          "uuid": "8c50fcd2-c900-418b-b8d2-86b2895f4da6",
           "body": "{\n  \"id\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\n  \"stock\": 0,\n  \"date\": \"2023-03-24\",\n  \"startTime\": \"08:30:15\",\n  \"endingTime\": \"09:30:15\"\n}",
           "latency": 0,
           "statusCode": 200,
@@ -448,14 +448,14 @@
       "responseMode": null
     },
     {
-      "uuid": "a522c343-fd85-48f0-96ee-9488c3392b50",
+      "uuid": "82a7a60d-ff00-48a0-a74b-f7bf59ff0cd0",
       "type": "http",
       "documentation": "",
       "method": "post",
       "endpoint": "api/schedule",
       "responses": [
         {
-          "uuid": "9fafd353-4551-48a1-8a62-b42f0efcf768",
+          "uuid": "e43b11c4-956a-4f94-8a17-6d5f9e2f487b",
           "body": "{\n  \"id\": \"string\",\n  \"command\": \"string\"\n}",
           "latency": 0,
           "statusCode": 200,
@@ -481,14 +481,14 @@
       "responseMode": null
     },
     {
-      "uuid": "492e6a3f-e59d-4f14-9f48-8bc1dbe9556a",
+      "uuid": "2d5af6c6-3e3c-4db4-b907-de780a759087",
       "type": "http",
       "documentation": "",
       "method": "post",
       "endpoint": "api/schedule/batch",
       "responses": [
         {
-          "uuid": "14bbe75d-933e-4929-939d-32c28ac97698",
+          "uuid": "09f0b966-e72f-4188-a0f0-42392f7c8374",
           "body": "{\n  \"created\": {\n    \"additionalProp1\": [\n      \"string\"\n    ],\n    \"additionalProp2\": [\n      \"string\"\n    ],\n    \"additionalProp3\": [\n      \"string\"\n    ]\n  },\n  \"command\": \"string\"\n}",
           "latency": 0,
           "statusCode": 200,
@@ -514,14 +514,14 @@
       "responseMode": null
     },
     {
-      "uuid": "656100ff-acc3-4dd3-9eef-169fec461c8b",
+      "uuid": "3c606fb5-c76c-401a-8a3e-b609a583a57d",
       "type": "http",
       "documentation": "",
       "method": "post",
       "endpoint": "api/receipt",
       "responses": [
         {
-          "uuid": "c5a40c68-fe13-49fa-814a-60a96c038820",
+          "uuid": "9a87e3e0-2574-4265-8d6b-0851702abeec",
           "body": "{\n  \"id\": \"string\",\n  \"command\": \"string\"\n}",
           "latency": 0,
           "statusCode": 200,
@@ -547,14 +547,14 @@
       "responseMode": null
     },
     {
-      "uuid": "9fccdf4d-2351-4e58-8f77-ea53304b207a",
+      "uuid": "97cd11e1-4956-4262-ae8d-153444a7291e",
       "type": "http",
       "documentation": "",
       "method": "get",
       "endpoint": "api/schedule/:id",
       "responses": [
         {
-          "uuid": "ed3e9607-8dcc-4762-8165-b753734c991d",
+          "uuid": "bafffe41-a840-4adb-ae5d-789ea213f7ae",
           "body": "{\n  \"id\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\n  \"stock\": 0,\n  \"date\": \"2023-03-24\",\n  \"startTime\": \"08:30:15\",\n  \"endingTime\": \"09:30:15\",\n  \"agency\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\"\n}",
           "latency": 0,
           "statusCode": 200,
@@ -580,14 +580,14 @@
       "responseMode": null
     },
     {
-      "uuid": "8c2385ac-ae98-4a6b-99a2-2f03553fb8c7",
+      "uuid": "5b46c9a9-f46e-458a-8eaf-fb3ecf318d1c",
       "type": "http",
       "documentation": "",
       "method": "delete",
       "endpoint": "api/schedule/:id",
       "responses": [
         {
-          "uuid": "03e51791-4848-447b-9274-c87ba7f3784b",
+          "uuid": "64474229-e32d-4813-a245-f97889a539f4",
           "body": "{\n  \"id\": \"string\",\n  \"command\": \"string\"\n}",
           "latency": 0,
           "statusCode": 200,
@@ -613,14 +613,14 @@
       "responseMode": null
     },
     {
-      "uuid": "c7119bc8-3ff5-4772-8c33-aec799ddcaa7",
+      "uuid": "a76fb164-4e4a-45f0-a991-45f2af740726",
       "type": "http",
       "documentation": "",
       "method": "get",
       "endpoint": "api/schedule/available",
       "responses": [
         {
-          "uuid": "d7bf329d-7744-4f1a-869d-221fded39783",
+          "uuid": "cc4faf10-2bf2-403c-8387-2ed398f1c796",
           "body": "{\n  \"message\": \"string\",\n  \"data\": [\n    {\n      \"id\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\n      \"stock\": 0,\n      \"date\": \"2023-03-24\",\n      \"startTime\": \"08:30:15\",\n      \"endingTime\": \"09:30:15\",\n      \"agency\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\"\n    }\n  ]\n}\n",
           "latency": 0,
           "statusCode": 200,
@@ -646,14 +646,14 @@
       "responseMode": null
     },
     {
-      "uuid": "7f1ca89e-a66e-443c-9266-cfd60aedc704",
+      "uuid": "6d867a89-cd80-4ee2-a4e4-dd69f1a4723e",
       "type": "http",
       "documentation": "",
       "method": "get",
       "endpoint": "api/receipt/:schedule",
       "responses": [
         {
-          "uuid": "8a8c9831-7c18-4749-ac8b-4a9252250282",
+          "uuid": "2126b230-6c25-48b5-a9d7-1832580c945c",
           "body": "{\n  \"message\": \"string\",\n  \"schedule\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\n  \"receipts\": [\n    {\n      \"id\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\n      \"time\": \"08:30:15\",\n      \"user\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\n      \"service\": \"string\",\n      \"identification\": \"string\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
@@ -679,14 +679,14 @@
       "responseMode": null
     },
     {
-      "uuid": "e6a65e5e-9014-4e34-b73b-f2222797dcde",
+      "uuid": "ca205ca3-bc2e-4dfb-b39e-b11e54233732",
       "type": "http",
       "documentation": "",
       "method": "delete",
       "endpoint": "api/receipt/:id",
       "responses": [
         {
-          "uuid": "3d97f0fb-1cfe-43c6-be1d-695b53805146",
+          "uuid": "625a2a2a-6cf3-490c-865e-71a696c42ab5",
           "body": "{\n  \"id\": \"string\",\n  \"command\": \"string\"\n}",
           "latency": 0,
           "statusCode": 200,
@@ -715,23 +715,23 @@
   "rootChildren": [
     {
       "type": "route",
-      "uuid": "9951073c-7510-401a-8b35-9d8e0cd4b79a"
+      "uuid": "20ac06db-9f48-4e7b-a5bf-73eef42c8104"
     },
     {
       "type": "folder",
-      "uuid": "50adc803-b3f7-41fe-a583-c778b216b982"
+      "uuid": "81995b3e-4801-4847-9747-20ff84185128"
     },
     {
       "type": "folder",
-      "uuid": "28c9a403-e67a-41c3-b9c1-b8cc1095cec5"
+      "uuid": "97263bab-6ce8-40ec-a28c-b71e622c8f3d"
     },
     {
       "type": "folder",
-      "uuid": "f3f464ca-ab43-4314-9889-ecd3441fda1e"
+      "uuid": "fb36c62d-eb31-44ab-8518-c1d672591868"
     },
     {
       "type": "folder",
-      "uuid": "1af94a79-ef79-4866-8d1e-be96996eb51e"
+      "uuid": "63e2ff71-0a70-4447-a96c-4daa4cdd5081"
     }
   ],
   "proxyMode": false,
@@ -767,7 +767,7 @@
   ],
   "data": [
     {
-      "uuid": "2630fd16-eb01-4257-83bb-2038a5445890",
+      "uuid": "303bf5a0-9e17-4548-b9e8-2ac0025b9cc0",
       "id": "ogri",
       "name": "User",
       "documentation": "",
