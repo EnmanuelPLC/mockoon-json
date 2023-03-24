@@ -4,7 +4,7 @@
   "name": "Registro",
   "endpointPrefix": "",
   "latency": 200,
-  "port": 3201,
+  "port": 3200,
   "hostname": "",
   "folders": [
     {
