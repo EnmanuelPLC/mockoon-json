@@ -204,7 +204,7 @@
     {
       "uuid": "b026ef96-227f-445d-bc54-8a0f8749e869",
       "name": "BackOffice",
-      "collapsed": true,
+      "collapsed": false,
       "children": [
         {
           "type": "route",
@@ -340,7 +340,7 @@
       "type": "http",
       "documentation": "",
       "method": "post",
-      "endpoint": "api/auth/login999",
+      "endpoint": "api/auth/login",
       "responses": [
         {
           "uuid": "0382b72e-cdb8-44c6-b7e8-18fe911e7b62",
@@ -372,7 +372,7 @@
       "responses": [
         {
           "uuid": "afb36de6-3c93-403d-b965-68c2c2042a07",
-          "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"message\": \"OK\",\n  \"status\": 200,\n  \"errors\": null,\n  \"data\": [{}]\n}",
+          "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"message\": \"OK\",\n  \"status\": 200,\n  \"errors\": null,\n  \"data\": [\n\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -400,7 +400,7 @@
       "responses": [
         {
           "uuid": "928403cd-faec-4ee3-9ead-895dab4c2940",
-          "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"status\": 200\n  \"message\": \"OK\"\n  \"errors\": null\n  \"data\": [\n    {{#repeat 50}}\n    {      {\n    \"id\": \"{{faker 'datatype.uuid'}}\",\n    \"email\": \"{{faker 'internet.email'}}\",\n    \"firstname\": \"{{faker 'name.firstName'}}\",\n    \"lastname\": \"{{faker 'name.lastName'}}\"\n    \"identification\": \"{{faker 'datatype.number' min=1100000000 max=9915875791}}\"\n  }\n    {{/repeat}}\n  ]\n}",
+          "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"message\": \"OK\",\n  \"status\": 200,\n  \"errors\": null,\n  \"data\": [\n    {{#repeat 50}}\n    {      {\n    \"id\": \"{{faker 'datatype.uuid'}}\",\n    \"email\": \"{{faker 'internet.email'}}\",\n    \"firstname\": \"{{faker 'name.firstName'}}\",\n    \"lastname\": \"{{faker 'name.lastName'}}\"\n    \"identification\": \"{{faker 'datatype.number' min=1100000000 max=9915875791}}\"\n  }\n    {{/repeat}}\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -428,7 +428,7 @@
       "responses": [
         {
           "uuid": "9f22b345-2fdc-438c-bb38-b742df0b5e6d",
-          "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"status\": 200\n  \"message\": \"OK\"\n  \"errors\": null\n  \"data\": [{\n    \"id\": \"{{faker 'datatype.uuid'}}\",\n    \"email\": \"{{faker 'internet.email'}}\",\n    \"firstname\": \"{{faker 'name.firstName'}}\",\n    \"lastname\": \"{{faker 'name.lastName'}}\"\n    \"identification\": \"{{faker 'datatype.number' min=1100000000 max=9915875791}}\"\n  }]\n}",
+          "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"message\": \"OK\",\n  \"status\": 200,\n  \"errors\": null,\n  \"data\": [{\n    \"id\": \"{{faker 'datatype.uuid'}}\",\n    \"email\": \"{{faker 'internet.email'}}\",\n    \"firstname\": \"{{faker 'name.firstName'}}\",\n    \"lastname\": \"{{faker 'name.lastName'}}\"\n    \"identification\": \"{{faker 'datatype.number' min=1100000000 max=9915875791}}\"\n  }]\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -918,7 +918,7 @@
       "responses": [
         {
           "uuid": "2688562e-473b-43d8-851e-c81eba4c9ba7",
-          "body": "",
+          "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"status\": 200,\n  \"message\": \"OK\",\n  \"errors\": null,\n  \"data\": [\n    {{#repeat 5}}\n    {\n      \"id\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\n      \"firstName\": \"{{firstName}}\",\n      \"lastName\": \"{{lastName}}\",\n      \"identification\": \"{{faker 'datatype.number' min=1111111111 max=9999999999}}\",\n      \"email\": \"{{email}}\",\n      \"type\": \"string\",\n      \"state\": \"ACTIVE\",\n      \"profile\": {\n        \"additionalProp1\": \"string\",\n        \"additionalProp2\": \"string\",\n        \"additionalProp3\": \"string\"\n      },\n      \"agency\": {\n        \"additionalProp1\": \"string\",\n        \"additionalProp2\": \"string\",\n        \"additionalProp3\": \"string\"\n      },\n      \"aplication\": {\n        \"additionalProp1\": \"string\",\n        \"additionalProp2\": \"string\",\n        \"additionalProp3\": \"string\"\n      }\n    }\n    {{/repeat}}\n  ],\n  \"totalPages\": 1,\n  \"totalElements\": 5,\n  \"pageElements\": 5,\n  \"pageLimit\": 10,\n  \"pageNumber\": 1\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "OK",
@@ -951,7 +951,7 @@
       "responses": [
         {
           "uuid": "37ace868-151d-4789-a97e-5dd7b3569900",
-          "body": "",
+          "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"message\": \"OK\",\n  \"status\": 200,\n  \"errors\": null,\n  \"data\": [\n\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "OK",
@@ -984,7 +984,7 @@
       "responses": [
         {
           "uuid": "9d1debb9-05a3-447d-bd97-07bd4a343625",
-          "body": "",
+          "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"message\": \"OK\",\n  \"status\": 200,\n  \"errors\": null,\n  \"data\": [\n\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "OK",
@@ -1116,7 +1116,7 @@
       "responses": [
         {
           "uuid": "4382df2e-6ff1-44c3-b7ab-9d4ba1e57de7",
-          "body": "",
+          "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"message\": \"OK\",\n  \"status\": 200,\n  \"errors\": null,\n  \"data\": [{\n    \n  }]\n  \n}",
           "latency": 0,
           "statusCode": 200,
           "label": "OK",
@@ -1149,7 +1149,7 @@
       "responses": [
         {
           "uuid": "c3280829-6b8d-4f03-90ae-bb6668b5791b",
-          "body": "",
+          "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"message\": \"OK\",\n  \"status\": 200,\n  \"errors\": null,\n  \"data\": [{\n    \n  }]\n  \n}",
           "latency": 0,
           "statusCode": 200,
           "label": "OK",
@@ -1281,7 +1281,7 @@
       "responses": [
         {
           "uuid": "a54d3fc6-5ba0-4148-b50a-afb4d4053876",
-          "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"status\": 200\n  \"message\": \"OK\"\n  \"errors\": null\n  \"data\": [\n    {{#repeat 5}}\n    {\n      \"id\": \"fa\",\n      \"name\": \"string\",\n      \"description\": \"string\",\n      \"latitude\": {{faker 'address.latitude'}},\n      \"longitude\": {{faker 'address.longitude'}},\n      \"state\": \"ACTIVE\"\n    }\n    {{/repeat}}\n  ],\n  \"totalPages\": 1,\n  \"totalElements\": 5,\n  \"pageElements\": 5,\n  \"pageLimit\": 10,\n  \"pageNumber\": 1\n}",
+          "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"status\": 200,\n  \"message\": \"OK\",\n  \"errors\": null,\n  \"data\": [\n    {{#repeat 5}}\n    {\n      \"id\": \"fa\",\n      \"name\": \"string\",\n      \"description\": \"string\",\n      \"latitude\": {{faker 'address.latitude'}},\n      \"longitude\": {{faker 'address.longitude'}},\n      \"state\": \"ACTIVE\"\n    }\n    {{/repeat}}\n  ],\n  \"totalPages\": 1,\n  \"totalElements\": 5,\n  \"pageElements\": 5,\n  \"pageLimit\": 10,\n  \"pageNumber\": 1\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "OK",
@@ -1314,7 +1314,7 @@
       "responses": [
         {
           "uuid": "66031963-7be4-480e-afd0-bd558049d80e",
-          "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"status\": 200\n  \"message\": \"OK\"\n  \"errors\": null\n  \"data\": [\n    {\n      \"id\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\n      \"command\": \"string\"\n    }\n  ]\n}",
+          "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"status\": 200,\n  \"message\": \"OK\",\n  \"errors\": null,\n  \"data\": [\n    {\n      \"id\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\n      \"command\": \"string\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "OK",
@@ -1347,7 +1347,7 @@
       "responses": [
         {
           "uuid": "99888fd2-a2f7-4feb-aab4-b077784e82f9",
-          "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"status\": 200\n  \"message\": \"OK\"\n  \"errors\": null\n  \"data\": [\n    {\n      \"id\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\n      \"command\": \"string\"\n    }\n  ]\n}",
+          "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"status\": 200,\n  \"message\": \"OK\",\n  \"errors\": null,\n  \"data\": [\n    {\n      \"id\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\n      \"command\": \"string\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "OK",
@@ -1380,7 +1380,7 @@
       "responses": [
         {
           "uuid": "8e62c0ab-ea0e-47a7-abb3-6bcfe362bd86",
-          "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"status\": 200\n  \"message\": \"OK\"\n  \"errors\": null\n  \"data\": [\n    {\n      \"id\": \"{{faker 'datatype.uuid'}}\",\n      \"command\": \"string\"\n    }\n  ]\n}",
+          "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"status\": 200,\n  \"message\": \"OK\",\n  \"errors\": null,\n  \"data\": [\n    {\n      \"id\": \"{{faker 'datatype.uuid'}}\",\n      \"command\": \"string\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "OK",
@@ -1413,7 +1413,7 @@
       "responses": [
         {
           "uuid": "c9846d20-2e0a-4c28-8ed2-b87f729e6611",
-          "body": "",
+          "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"message\": \"OK\",\n  \"status\": 200,\n  \"errors\": null,\n  \"data\": [\n\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "OK",
@@ -1446,7 +1446,7 @@
       "responses": [
         {
           "uuid": "e78ebb8d-4f2e-408b-be52-f60f29a632e0",
-          "body": "",
+          "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"message\": \"OK\",\n  \"status\": 200,\n  \"errors\": null,\n  \"data\": [\n\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "OK",
@@ -1479,7 +1479,7 @@
       "responses": [
         {
           "uuid": "949de49a-488d-4cf9-bddd-b85764f352a7",
-          "body": "",
+          "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"message\": \"OK\",\n  \"status\": 200,\n  \"errors\": null,\n  \"data\": [\n\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "OK",
@@ -1512,7 +1512,7 @@
       "responses": [
         {
           "uuid": "d3c60f43-420d-4af9-81b8-4d819afb0a8b",
-          "body": "",
+          "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"message\": \"OK\",\n  \"status\": 200,\n  \"errors\": null,\n  \"data\": [{\n    \n  }]\n  \n}",
           "latency": 0,
           "statusCode": 200,
           "label": "OK",
@@ -1545,7 +1545,7 @@
       "responses": [
         {
           "uuid": "d4c8fb6b-95a9-4934-a5e7-a76c0abe1896",
-          "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"status\": 200\n  \"message\": \"OK\"\n  \"errors\": null\n  \"data\": [\n    {{#repeat 5}}\n        {\n      \"id\": \"{{faker 'datatype.uuid'}}\",\n      \"name\": \"string\",\n      \"code\": 0,\n      \"description\": \"string\"\n    }\n    {{/repeat}}\n  ],\n  \"totalPages\": 1,\n  \"totalElements\": 5,\n  \"pageElements\": 5,\n  \"pageLimit\": 10,\n  \"pageNumber\": 1\n}",
+          "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"status\": 200,\n  \"message\": \"OK\",\n  \"errors\": null,\n  \"data\": [\n    {{#repeat 5}}\n        {\n      \"id\": \"{{faker 'datatype.uuid'}}\",\n      \"name\": \"string\",\n      \"code\": 0,\n      \"description\": \"string\"\n    }\n    {{/repeat}}\n  ],\n  \"totalPages\": 1,\n  \"totalElements\": 5,\n  \"pageElements\": 5,\n  \"pageLimit\": 10,\n  \"pageNumber\": 1\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "OK",
@@ -1578,7 +1578,7 @@
       "responses": [
         {
           "uuid": "de1bebea-497e-4fe5-9a6c-014447f85ca5",
-          "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"status\": 200\n  \"message\": \"OK\"\n  \"errors\": null\n  \"data\": [\n    {\n      \"id\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\n      \"command\": \"string\"\n    }\n  ]\n}",
+          "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"status\": 200,\n  \"message\": \"OK\",\n  \"errors\": null,\n  \"data\": [\n    {\n      \"id\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\n      \"command\": \"string\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "OK",
@@ -1611,7 +1611,7 @@
       "responses": [
         {
           "uuid": "0e71eb53-d582-4eeb-86b5-fe7ab33848a4",
-          "body": "",
+          "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"message\": \"OK\",\n  \"status\": 200,\n  \"errors\": null,\n  \"data\": [\n    {\n      \"id\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\n      \"firstName\": \"{{firstName}}\",\n      \"lastName\": \"{{lastName}}\",\n      \"identification\": \"{{faker 'datatype.number' min=1111111111 max=9999999999}}\",\n      \"email\": \"{{email}}\",\n      \"type\": \"string\",\n      \"state\": \"ACTIVE\",\n      \"profile\": {\n        \"additionalProp1\": \"string\",\n        \"additionalProp2\": \"string\",\n        \"additionalProp3\": \"string\"\n      },\n      \"agency\": {\n        \"additionalProp1\": \"string\",\n        \"additionalProp2\": \"string\",\n        \"additionalProp3\": \"string\"\n      },\n      \"aplication\": {\n        \"additionalProp1\": \"string\",\n        \"additionalProp2\": \"string\",\n        \"additionalProp3\": \"string\"\n      }\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "OK",
@@ -1644,7 +1644,7 @@
       "responses": [
         {
           "uuid": "5e393ec6-bdb4-4fc0-83c4-a542a3ac7149",
-          "body": "",
+          "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"message\": \"OK\",\n  \"status\": 200,\n  \"errors\": null,\n  \"data\": [\n\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "OK",
@@ -1677,7 +1677,7 @@
       "responses": [
         {
           "uuid": "7489917b-04ba-48d8-8398-9b7429370af5",
-          "body": "",
+          "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"message\": \"OK\",\n  \"status\": 200,\n  \"errors\": null,\n  \"data\": [{\n      \"id\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\n      \"firstName\": \"Admin\",\n      \"lastName\": \"del Sistema\",\n      \"identification\": \"0000000000\",\n      \"email\": \"admin@local.com\",\n      \"type\": \"string\",\n      \"state\": \"string\",\n      \"profile\": {\n        \n      },\n      \"agency\": {\n        \n      },\n      \"aplication\": {\n      \n      }\n    }]\n  \n}",
           "latency": 0,
           "statusCode": 200,
           "label": "OK",
@@ -2040,7 +2040,7 @@
       "responses": [
         {
           "uuid": "8627cb13-f46d-48fa-ba0a-b9232613673b",
-          "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"status\": 200\n  \"message\": \"OK\"\n  \"errors\": null\n  \"data\": [\n    {\n      \"id\": \"{{faker 'datatype.uuid'}}\",\n      \"name\": \"string\",\n      \"description\": \"string\",\n      \"country\": {\n        \"id\": \"{{faker 'datatype.uuid'}}\",\n        \"name\": \"string\",\n        \"type\": \"COUNTRY\"\n      },\n      \"province\": {\n        \"id\": \"{{faker 'datatype.uuid'}}\",\n        \"name\": \"string\",\n        \"type\": \"COUNTRY\"\n      },\n      \"canton\": {\n        \"id\": \"{{faker 'datatype.uuid'}}\",\n        \"name\": \"string\",\n        \"type\": \"COUNTRY\"\n      },\n      \"parroquia\": {\n        \"id\": \"{{faker 'datatype.uuid'}}\",\n        \"name\": \"string\",\n        \"type\": \"COUNTRY\"\n      },\n      \"city\": {\n        \"id\": \"{{faker 'datatype.uuid'}}\",\n        \"name\": \"string\",\n        \"type\": \"COUNTRY\"\n      },\n      \"region\": {\n        \"id\": \"{{faker 'datatype.uuid'}}\",\n        \"name\": \"string\",\n        \"type\": \"COUNTRY\"\n      },\n      \"latitude\": {{faker 'address.latitude'}},\n      \"longitude\": {{faker 'address.longitude'}},\n      \"state\": \"ACTIVE\"\n    }\n  ]\n}",
+          "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"status\": 200,\n  \"message\": \"OK\",\n  \"errors\": null,\n  \"data\": [\n    {\n      \"id\": \"{{faker 'datatype.uuid'}}\",\n      \"name\": \"string\",\n      \"description\": \"string\",\n      \"country\": {\n        \"id\": \"{{faker 'datatype.uuid'}}\",\n        \"name\": \"string\",\n        \"type\": \"COUNTRY\"\n      },\n      \"province\": {\n        \"id\": \"{{faker 'datatype.uuid'}}\",\n        \"name\": \"string\",\n        \"type\": \"COUNTRY\"\n      },\n      \"canton\": {\n        \"id\": \"{{faker 'datatype.uuid'}}\",\n        \"name\": \"string\",\n        \"type\": \"COUNTRY\"\n      },\n      \"parroquia\": {\n        \"id\": \"{{faker 'datatype.uuid'}}\",\n        \"name\": \"string\",\n        \"type\": \"COUNTRY\"\n      },\n      \"city\": {\n        \"id\": \"{{faker 'datatype.uuid'}}\",\n        \"name\": \"string\",\n        \"type\": \"COUNTRY\"\n      },\n      \"region\": {\n        \"id\": \"{{faker 'datatype.uuid'}}\",\n        \"name\": \"string\",\n        \"type\": \"COUNTRY\"\n      },\n      \"latitude\": {{faker 'address.latitude'}},\n      \"longitude\": {{faker 'address.longitude'}},\n      \"state\": \"ACTIVE\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "OK",
@@ -2073,7 +2073,7 @@
       "responses": [
         {
           "uuid": "5abc310c-0f78-416c-9eb2-b7a3a6dea833",
-          "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"status\": 200\n  \"message\": \"OK\"\n  \"errors\": null\n  \"data\": [\n    {\n      \"id\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\n      \"command\": \"string\"\n    }\n  ]\n}",
+          "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"status\": 200,\n  \"message\": \"OK\",\n  \"errors\": null,\n  \"data\": [\n    {\n      \"id\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\n      \"command\": \"string\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "OK",
@@ -2106,7 +2106,7 @@
       "responses": [
         {
           "uuid": "aa0399f2-323a-4b94-88c3-8d6343c087cd",
-          "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"status\": 200\n  \"message\": \"OK\"\n  \"errors\": null\n  \"data\": [\n    {\n      \"id\": \"{{faker 'datatype.uuid'}}\",\n      \"name\": \"string\",\n      \"code\": 0,\n      \"description\": \"string\"\n    }\n  ]\n}",
+          "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"status\": 200,\n  \"message\": \"OK\",\n  \"errors\": null,\n  \"data\": [\n    {\n      \"id\": \"{{faker 'datatype.uuid'}}\",\n      \"name\": \"string\",\n      \"code\": 0,\n      \"description\": \"string\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "OK",
@@ -2139,7 +2139,7 @@
       "responses": [
         {
           "uuid": "6fb6bf45-7d18-4a7c-ab88-6d46e85f2ece",
-          "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"status\": 200\n  \"message\": \"OK\"\n  \"errors\": null\n  \"data\": [\n    {\n      \"id\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\n      \"command\": \"string\"\n    }\n  ]\n}",
+          "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"status\": 200,\n  \"message\": \"OK\",\n  \"errors\": null,\n  \"data\": [\n    {\n      \"id\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\n      \"command\": \"string\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "OK",
@@ -2172,7 +2172,7 @@
       "responses": [
         {
           "uuid": "f5695054-30dc-465a-b391-15af5afcfc8f",
-          "body": "",
+          "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"message\": \"OK\",\n  \"status\": 200,\n  \"errors\": null,\n  \"data\": [{\n    \n  }]\n  \n}",
           "latency": 0,
           "statusCode": 200,
           "label": "OK",
@@ -2260,6 +2260,18 @@
     {
       "key": "Content-Type",
       "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
     }
   ],
   "proxyReqHeaders": [
