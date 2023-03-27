@@ -2679,7 +2679,7 @@
       "uuid": "d7a8093b-5194-4670-a35d-5269b0b27933",
       "type": "http",
       "documentation": "",
-      "method": "get",
+      "method": "post",
       "endpoint": "api/get_file_s3",
       "responses": [
         {
