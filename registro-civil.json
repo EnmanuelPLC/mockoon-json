@@ -308,7 +308,7 @@
     {
       "uuid": "21df8825-5297-4b65-a674-4fa19b8f4968",
       "name": "Service",
-      "collapsed": true,
+      "collapsed": false,
       "children": [
         {
           "type": "route",
@@ -357,6 +357,10 @@
         {
           "type": "route",
           "uuid": "1858f021-587f-4894-827c-5adc78dd1f60"
+        },
+        {
+          "type": "route",
+          "uuid": "92554a98-d905-4375-b3a7-893749181970"
         }
       ]
     }
@@ -437,7 +441,7 @@
       "responses": [
         {
           "uuid": "15384f61-2d55-4634-9d42-f09bf97238c7",
-          "body": "",
+          "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"message\": \"OK\",\n  \"status\": 200,\n  \"errors\": null,\n  \"data\": [\n    {\n      \"id\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\n      \"command\": \"string\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "OK",
@@ -602,9 +606,9 @@
       "responses": [
         {
           "uuid": "082dc7a8-516d-4e70-a3fd-4e414d0d18fc",
-          "body": "",
+          "body": "{}",
           "latency": 0,
-          "statusCode": 200,
+          "statusCode": 201,
           "label": "OK",
           "headers": [
             {
@@ -1369,7 +1373,7 @@
       "responses": [
         {
           "uuid": "2688562e-473b-43d8-851e-c81eba4c9ba7",
-          "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"status\": 200,\n  \"message\": \"OK\",\n  \"errors\": null,\n  \"data\": [\n    {{#repeat 5}}\n    {\n      \"id\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\n      \"firstName\": \"{{firstName}}\",\n      \"lastName\": \"{{lastName}}\",\n      \"identification\": \"{{faker 'datatype.number' min=1111111111 max=9999999999}}\",\n      \"email\": \"{{email}}\",\n      \"type\": \"string\",\n      \"state\": \"ACTIVE\",\n      \"profile\": {\n        \"additionalProp1\": \"string\",\n        \"additionalProp2\": \"string\",\n        \"additionalProp3\": \"string\"\n      },\n      \"agency\": {\n        \"additionalProp1\": \"string\",\n        \"additionalProp2\": \"string\",\n        \"additionalProp3\": \"string\"\n      },\n      \"aplication\": {\n        \"additionalProp1\": \"string\",\n        \"additionalProp2\": \"string\",\n        \"additionalProp3\": \"string\"\n      }\n    }\n    {{/repeat}}\n  ],\n  \"totalPages\": 1,\n  \"totalElements\": 5,\n  \"pageElements\": 5,\n  \"pageLimit\": 10,\n  \"pageNumber\": 1\n}",
+          "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"status\": 200,\n  \"message\": \"OK\",\n  \"errors\": null,\n  \"data\": [\n    {{#repeat 20}}\n    {\n      \"id\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\n      \"firstName\": \"{{firstName}}\",\n      \"lastName\": \"{{lastName}}\",\n      \"identification\": \"{{faker 'datatype.number' min=1111111111 max=9999999999}}\",\n      \"email\": \"{{email}}\",\n      \"type\": \"string\",\n      \"state\": \"ACTIVE\",\n      \"profile\": {\n        \"additionalProp1\": \"string\",\n        \"additionalProp2\": \"string\",\n        \"additionalProp3\": \"string\"\n      },\n      \"agency\": {\n        \"additionalProp1\": \"string\",\n        \"additionalProp2\": \"string\",\n        \"additionalProp3\": \"string\"\n      },\n      \"aplication\": {\n        \"additionalProp1\": \"string\",\n        \"additionalProp2\": \"string\",\n        \"additionalProp3\": \"string\"\n      }\n    }\n    {{/repeat}}\n  ],\n  \"totalPages\": 1,\n  \"totalElements\": 5,\n  \"pageElements\": 5,\n  \"pageLimit\": 10,\n  \"pageNumber\": 1\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "OK",
@@ -1437,7 +1441,7 @@
           "uuid": "9d1debb9-05a3-447d-bd97-07bd4a343625",
           "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"message\": \"OK\",\n  \"status\": 200,\n  \"errors\": null,\n  \"data\": [\n\n  ]\n}",
           "latency": 0,
-          "statusCode": 200,
+          "statusCode": 201,
           "label": "OK",
           "headers": [
             {
@@ -2758,6 +2762,39 @@
       ],
       "enabled": true,
       "responseMode": null
+    },
+    {
+      "uuid": "92554a98-d905-4375-b3a7-893749181970",
+      "type": "http",
+      "documentation": "",
+      "method": "put",
+      "endpoint": "api/service",
+      "responses": [
+        {
+          "uuid": "a4d03017-85b0-4eff-a317-857cf6a39158",
+          "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"message\": \"OK\",\n  \"status\": 200,\n  \"errors\": null,\n  \"data\": [\n\n  ]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "OK",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "*/*"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
     }
   ],
   "rootChildren": [
@@ -2854,7 +2891,7 @@
     },
     {
       "key": "Access-Control-Allow-Headers",
-      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With, access-control-allow-origin,authorization,content-type"
     }
   ],
   "proxyReqHeaders": [
