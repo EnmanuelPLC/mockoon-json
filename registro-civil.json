@@ -3,7 +3,7 @@
   "lastMigration": 27,
   "name": "Registro",
   "endpointPrefix": "",
-  "latency": 0,
+  "latency": 300,
   "port": 3200,
   "hostname": "",
   "folders": [
@@ -308,7 +308,7 @@
     {
       "uuid": "21df8825-5297-4b65-a674-4fa19b8f4968",
       "name": "Service",
-      "collapsed": false,
+      "collapsed": true,
       "children": [
         {
           "type": "route",
@@ -2795,6 +2795,34 @@
       ],
       "enabled": true,
       "responseMode": null
+    },
+    {
+      "uuid": "3f4b79ec-6533-419b-ab33-135210c638e0",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "api/citizen",
+      "responses": [
+        {
+          "uuid": "c4824efe-b23f-4610-85c0-881f3fb76e19",
+          "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"status\": 200,\n  \"message\": \"OK\",\n  \"errors\": null,\n  \"data\": [\n    {\n      \"id\": \"{{faker 'datatype.uuid'}}\",\n      \"identification\": \"{{faker 'datatype.number'}} min=1111111111 max=9999999999\",\n      \"firstName\": \"string\",\n      \"lastName\": \"string\",\n      \"code\": 0,\n      \"description\": \"string\",\n    },\n  ]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
     }
   ],
   "rootChildren": [
@@ -2861,6 +2889,10 @@
     {
       "type": "route",
       "uuid": "f750633e-41e6-49dd-a01d-20fd392775c9"
+    },
+    {
+      "type": "route",
+      "uuid": "3f4b79ec-6533-419b-ab33-135210c638e0"
     }
   ],
   "proxyMode": true,
