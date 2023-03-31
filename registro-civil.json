@@ -99,7 +99,7 @@
     {
       "uuid": "63e2ff71-0a70-4447-a96c-4daa4cdd5081",
       "name": "Schedule",
-      "collapsed": true,
+      "collapsed": false,
       "children": [
         {
           "type": "route",
@@ -250,7 +250,7 @@
     {
       "uuid": "411fcfa8-70e5-4be0-8ced-a1a309b85437",
       "name": "Access",
-      "collapsed": false,
+      "collapsed": true,
       "children": [
         {
           "type": "route",
