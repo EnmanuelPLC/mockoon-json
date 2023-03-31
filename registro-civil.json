@@ -3,7 +3,7 @@
   "lastMigration": 27,
   "name": "Registro",
   "endpointPrefix": "",
-  "latency": 300,
+  "latency": 0,
   "port": 3200,
   "hostname": "",
   "folders": [
@@ -1006,11 +1006,11 @@
       "type": "http",
       "documentation": "",
       "method": "post",
-      "endpoint": "api/schedule/program",
+      "endpoint": "schedule/api/schedule/program",
       "responses": [
         {
           "uuid": "ef0568fd-5304-4121-981d-5377bba855d0",
-          "body": "{\n  \"created\": {\n    \"additionalProp1\": [\n      \"string\"\n    ],\n    \"additionalProp2\": [\n      \"string\"\n    ],\n    \"additionalProp3\": [\n      \"string\"\n    ]\n  },\n  \"command\": \"string\"\n}",
+          "body": "",
           "latency": 0,
           "statusCode": 200,
           "label": "OK",
@@ -1039,13 +1039,13 @@
       "type": "http",
       "documentation": "",
       "method": "get",
-      "endpoint": "api/schedule",
+      "endpoint": "schedule/api/schedule",
       "responses": [
         {
           "uuid": "472a118a-73b2-4d25-b992-974285c3697c",
-          "body": "{\n  \"message\": \"string\",\n  \"data\": [\n    {}\n  ],\n  \"totalPages\": 0,\n  \"totalElementsPage\": 0,\n  \"totalElements\": 0,\n  \"size\": 0,\n  \"number\": 0\n}",
+          "body": "{\n  \"message\": \"string\",\n  \"data\": [\n    {\n    \"id\":\"3fa85f64-5717-4562-b3fc-2c963f66abb5\",\n    \"province\": {\n            \"id\":\"1bd567ad-eb47-472b-8a97-868f6a0f0a5b\",\n            \"name\":\"Guayas\",\"type\":\"PROVINCE\"\n            },\n    \"agency\": {\n            \"id\": \"e1b1f5a4-1995-4c95-9faf-37a48293568d\",\n            \"name\": \"Matriz\"},\n    \"typeOfService\": {\n  \"id\":\"916bf51d-6acd-4aed-bc6b-ccd33e6f4e92\",\n  \"name\":\"Certificación de matrimonio\"},\n    \"endingDate\": \"2023-03-31T18:38:35.000Z\",\n    \"startDate\": \"2023-03-27T18:38:35.700Z\",\n    \"onlyFor\":true,\n    \"availableDates\":[\n      {\n          \"startDate\": \"2023-03-2\",\n          \"endingDate\": \"2023-03-3\"\n      },\n      {\n          \"startDate\": \"2023-03-5\",\n          \"endingDate\": \"2023-03-20\"\n      }\n  ],\n    \"timeTable\": [\n      {\n        \"startTime\": \"08:30:15\",\n        \"endingTime\": \"09:30:15\",\n        \"stock\": 5\n      },\n      {\n        \"startTime\": \"10:30:15\",\n        \"endingTime\": \"11:30:15\",\n        \"stock\": 3\n      }\n    ],\n    \"daysOfWeek\": [\n      \"MONDAY\",\n      \"FRIDAY\"\n    ]\n}  \n  ],\n  \"totalPages\": 0,\n  \"totalElementsPage\": 0,\n  \"totalElements\": 0,\n  \"size\": 0,\n  \"number\": 0\n}",
           "latency": 0,
-          "statusCode": 200,
+          "statusCode": 201,
           "label": "OK",
           "headers": [
             {
@@ -1072,7 +1072,7 @@
       "type": "http",
       "documentation": "",
       "method": "put",
-      "endpoint": "api/schedule",
+      "endpoint": "schedule/api/schedule",
       "responses": [
         {
           "uuid": "8c50fcd2-c900-418b-b8d2-86b2895f4da6",
@@ -1204,11 +1204,11 @@
       "type": "http",
       "documentation": "",
       "method": "get",
-      "endpoint": "api/schedule/:id",
+      "endpoint": "schedule/api/schedule/:id",
       "responses": [
         {
           "uuid": "bafffe41-a840-4adb-ae5d-789ea213f7ae",
-          "body": "{\n  \"id\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\n  \"stock\": 0,\n  \"date\": \"2023-03-24\",\n  \"startTime\": \"08:30:15\",\n  \"endingTime\": \"09:30:15\",\n  \"agency\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\"\n}",
+          "body": "{\n data:[{\n    \"id\":\"3fa85f64-5717-4562-b3fc-2c963f66abb5\",\n    \"province\":  {\n            \"id\":\"1bd567ad-eb47-472b-8a97-868f6a0f0a5b\",\n            \"name\":\"Guayas\",\"type\":\"PROVINCE\"},\n         {,\n    \"agency\": {\n      \"id\": \"1bd567ad-eb47-472b-8a97-868f6a0f0a5b\",\n      \"name\": \"peep\"\n    },\n    \"typeOfService\": {\n  \"id\":\"1bd567ad-eb47-472b-8a97-868f6a0f0a5b\",\n  \"name\":\"Certificación de matrimonio\",\n  },\n    \"endingDate\": \"2023-03-31T18:38:35.000Z\",\n    \"startDate\": \"2023-03-27T18:38:35.700Z\",\n    \"onlyFor\":false,\n    \"availableDates\":[\n      {\n          \"startDate\": \"2023-03-2\",\n          \"endingDate\": \"2023-03-3\"\n      },\n      {\n          \"startDate\": \"2023-03-5\",\n          \"endingDate\": \"2023-03-20\"\n      }\n  ],\n    \"timeTable\": [\n      {\n        \"startTime\": \"08:30:15\",\n        \"endingTime\": \"09:30:15\",\n        \"stock\": 0\n      }\n    ],\n    \"daysOfWeek\": [\n      \"MONDAY\",\n      \"FRIDAY\"\n    ]\n}  \n]\n}\n  ",
           "latency": 0,
           "statusCode": 200,
           "label": "OK",
@@ -1218,9 +1218,9 @@
               "value": "*/*"
             }
           ],
-          "bodyType": "INLINE",
+          "bodyType": "DATABUCKET",
           "filePath": "",
-          "databucketID": "",
+          "databucketID": "d171",
           "sendFileAsBody": false,
           "rules": [],
           "rulesOperator": "OR",
@@ -1237,7 +1237,7 @@
       "type": "http",
       "documentation": "",
       "method": "delete",
-      "endpoint": "api/schedule/:id",
+      "endpoint": "schedule/api/schedule/:id",
       "responses": [
         {
           "uuid": "64474229-e32d-4813-a245-f97889a539f4",
@@ -1732,11 +1732,11 @@
       "type": "http",
       "documentation": "",
       "method": "get",
-      "endpoint": "api/agency",
+      "endpoint": "identity/api/agency",
       "responses": [
         {
           "uuid": "a54d3fc6-5ba0-4148-b50a-afb4d4053876",
-          "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"status\": 200,\n  \"message\": \"OK\",\n  \"errors\": null,\n  \"data\": [\n    {{#repeat 5}}\n    {\n      \"id\": {{faker 'datatype.number'}},\n      \"name\": \"{{faker 'address.city'}}\",\n      \"description\": \"string\",\n      \"latitude\": {{faker 'address.latitude'}},\n      \"longitude\": {{faker 'address.longitude'}},\n      \"state\": \"ACTIVE\"\n    }\n    {{/repeat}}\n  ],\n  \"totalPages\": 1,\n  \"totalElements\": 5,\n  \"pageElements\": 5,\n  \"pageLimit\": 10,\n  \"pageNumber\": 1\n}",
+          "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"status\": 200,\n  \"message\": \"OK\",\n  \"errors\": null,\n  \"data\": [\n    {{#repeat 5}}\n    {\n      \"id\": \"{{faker 'datatype.uuid'}}\",\n      \"name\": \"{{faker 'name.firstName'}}\",\n      \"description\": \"string\",\n      \"latitude\": {{faker 'address.latitude'}},\n      \"longitude\": {{faker 'address.longitude'}},\n      \"state\": \"ACTIVE\"\n    }\n    {{/repeat}}\n  ],\n  \"totalPages\": 1,\n  \"totalElements\": 5,\n  \"pageElements\": 5,\n  \"pageLimit\": 10,\n  \"pageNumber\": 1\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "OK",
@@ -1746,9 +1746,9 @@
               "value": "*/*"
             }
           ],
-          "bodyType": "INLINE",
+          "bodyType": "DATABUCKET",
           "filePath": "",
-          "databucketID": "",
+          "databucketID": "ytxa",
           "sendFileAsBody": false,
           "rules": [],
           "rulesOperator": "OR",
@@ -1765,7 +1765,7 @@
       "type": "http",
       "documentation": "",
       "method": "put",
-      "endpoint": "api/agency",
+      "endpoint": "identity/api/agency",
       "responses": [
         {
           "uuid": "66031963-7be4-480e-afd0-bd558049d80e",
@@ -1779,9 +1779,9 @@
               "value": "*/*"
             }
           ],
-          "bodyType": "INLINE",
+          "bodyType": "DATABUCKET",
           "filePath": "",
-          "databucketID": "",
+          "databucketID": "d171",
           "sendFileAsBody": false,
           "rules": [],
           "rulesOperator": "OR",
@@ -1814,13 +1814,30 @@
           ],
           "bodyType": "INLINE",
           "filePath": "",
-          "databucketID": "",
+          "databucketID": "ogri",
           "sendFileAsBody": false,
           "rules": [],
           "rulesOperator": "OR",
           "disableTemplating": false,
           "fallbackTo404": false,
           "default": true
+        },
+        {
+          "uuid": "ba049460-c3e7-44d2-8ebf-b16e0619bc06",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false
         }
       ],
       "enabled": true,
@@ -2293,11 +2310,11 @@
       "type": "http",
       "documentation": "",
       "method": "get",
-      "endpoint": "api/location/province",
+      "endpoint": "identity/api/location/province",
       "responses": [
         {
           "uuid": "a76f1641-c071-4366-9eec-5c5e94bf69b9",
-          "body": "",
+          "body": "{\n  \n    \"data\":[\n        {\n            \"id\":\"1bd567ad-eb47-472b-8a97-868f6a0f0a5b\",\n            \"name\":\"Guayas\",\"type\":\"PROVINCE\"},\n         {\n             \"id\":\"26ac3e73-7c23-471c-8640-2cf53a6df519\",\n              \"name\":\"Pichincha\",\"type\":\"PROVINCE\"\n        }\n        ]\n }",
           "latency": 0,
           "statusCode": 200,
           "label": "OK",
@@ -2944,7 +2961,21 @@
       "id": "ogri",
       "name": "User",
       "documentation": "",
-      "value": "[  \n  {{#repeat 50}}\n  {\n    \"id\": \"{{faker 'datatype.uuid'}}\",\n    \"email\": \"{{faker 'internet.email'}}\",\n    \"firstname\": \"{{faker 'name.firstName'}}\",\n    \"lastname\": \"{{faker 'name.lastName'}}\",\n    \"identification\": \"{{faker 'datatype.number' min=1100000000 max=9915875791}}\"\n  }\n  {{/repeat}}\n]"
+      "value": "{\n    \"timestamp\": \"27-03-2023 06:51:01 [UTC]\",\n    \"status\": 200,\n    \"message\": \"OK\",\n    \"errors\": null,\n    \"data\": [\n        {\n            \"id\": \"1d6bee12-224d-4256-a50e-8c2fbd489be7\",\n            \"firstName\": \"Super Administrador\",\n            \"lastName\": \"del Sistema\",\n            \"identification\": \"0000000000\",\n            \"email\": \"admin@identity.local\",\n            \"type\": \"CITIZEN\",\n            \"state\": \"ACTIVE\",\n            \"profile\": {},\n            \"agency\": {},\n            \"aplication\": {}\n        },\n        {\n            \"id\": \"3f3f6129-c253-4720-9e94-ca487473bf3c\",\n            \"firstName\": \"Un-registred citizen\",\n            \"lastName\": \"Awaiting activation by code\",\n            \"identification\": \"1010101010\",\n            \"email\": \"jacunaferrer@gmail.com\",\n            \"type\": \"CITIZEN\",\n            \"state\": \"ACTIVE\",\n            \"profile\": {},\n            \"agency\": {},\n            \"aplication\": {}\n        },\n        {\n            \"id\": \"911c44a5-cef9-49ee-a5b7-d2c557764ca3\",\n            \"firstName\": \"Un-registred citizen\",\n            \"lastName\": \"Awaiting activation by code\",\n            \"identification\": \"0901234567\",\n            \"email\": \"asd@gmail.com\",\n            \"type\": \"CITIZEN\",\n            \"state\": \"ACTIVE\",\n            \"profile\": {},\n            \"agency\": {},\n            \"aplication\": {}\n        },\n        {\n            \"id\": \"61cc0e61-d5bc-48a1-96f0-1dd431631ad5\",\n            \"firstName\": \"Un-registred citizen\",\n            \"lastName\": \"Awaiting activation by code\",\n            \"identification\": \"1710483585\",\n            \"email\": \"niurky921116@gmail.com\",\n            \"type\": \"CITIZEN\",\n            \"state\": \"ACTIVE\",\n            \"profile\": {},\n            \"agency\": {},\n            \"aplication\": {}\n        }\n    ],\n    \"totalPages\": 1,\n    \"totalElements\": 4,\n    \"pageElements\": 4,\n    \"pageLimit\": 10,\n    \"pageNumber\": 0\n}"
+    },
+    {
+      "uuid": "d4e7e922-808c-46e7-aeb9-c2bea7a3c4a1",
+      "id": "ytxa",
+      "name": "Agency",
+      "documentation": "",
+      "value": "{\"data\":[\n        {\n            \"id\": \"e1b1f5a4-1995-4c95-9faf-37a48293568d\",\n            \"name\": \"Matriz\",\n            \"description\": \"Matriz\",\n            \"country\": {\n                \"id\": \"39f4b3e0-96b7-4c83-ad45-9ef4287a0229\",\n                \"name\": \"Ecuador\",\n                \"type\": \"COUNTRY\"\n            },\n            \"province\": {\n                \"id\": \"1bd567ad-eb47-472b-8a97-868f6a0f0a5b\",\n                \"name\": \"Guayas\",\n                \"type\": \"PROVINCE\"\n            },\n            \"canton\": {\n                \"id\": \"dfb4dd7b-938e-44f4-95d2-a0391d2b6dcf\",\n                \"name\": \"Guayaguil\",\n                \"type\": \"CANTON\"\n            },\n            \"parroquia\": {\n                \"id\": \"ca5af43f-2c02-4d22-b30b-145d1fa5dc31\",\n                \"name\": \"Guayaguil\",\n                \"type\": \"PARROQUIA\"\n            },\n            \"city\": {\n                \"id\": \"bfae6f9f-0bce-4b05-b183-80a24d01e158\",\n                \"name\": \"Milagros\",\n                \"type\": \"CITY\"\n            },\n            \"region\": {\n                \"id\": \"98d1ea72-d8c5-4251-9479-df724e8b5feb\",\n                \"name\": \"Guayas\",\n                \"type\": \"REGION\"\n            },\n            \"latitude\": null,\n            \"longitude\": null,\n            \"state\": \"ACTIVE\"\n        }\n    ]}"
+    },
+    {
+      "uuid": "30c68fd1-2ba1-4372-bf5f-65cdaaeef015",
+      "id": "d171",
+      "name": "Schedule",
+      "documentation": "",
+      "value": "{\"data\":[\n{\n    \"id\":\"3fa85f64-5717-4562-b3fc-2c963f66abb5\",\n    \"province\": \"1bd567ad-eb47-472b-8a97-868f6a0f0a5b\",\n    \"agency\": \"e1b1f5a4-1995-4c95-9faf-37a48293568d\",\n    \"typeOfService\": \"916bf51d-6acd-4aed-bc6b-ccd33e6f4e92\",\n    \"endingDate\": \"2023-03-31T19:50:48.000Z\",\n    \"startDate\": \"2023-03-29T19:50:48.000Z\",\n    \"status\":\"ACTIVE\",\n    \"onlyFor\": true,\n    \"availableDates\":[\n      {\n          \"startDate\": \"2023-03-30\",\n          \"endingDate\": \"2023-03-30\"\n      },\n      {\n          \"startDate\": \"2023-03-031\",\n          \"endingDate\": \"2023-03-31\"\n      }\n  ],\n    \"timeTable\": [\n      {\n        \"startTime\": \"08:30:15\",\n        \"endingTime\": \"09:30:15\",\n        \"stock\": 5\n      }\n    ],\n    \"daysOfWeek\": [\n      \"MONDAY\",\n      \"FRIDAY\"\n    ]\n}  \n]\n}\n  \n"
     }
   ]
 }
