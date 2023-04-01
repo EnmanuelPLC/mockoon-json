@@ -3,7 +3,7 @@
   "lastMigration": 27,
   "name": "Registro",
   "endpointPrefix": "",
-  "latency": 0,
+  "latency": 300,
   "port": 3200,
   "hostname": "",
   "folders": [
@@ -2814,19 +2814,57 @@
       "responseMode": null
     },
     {
-      "uuid": "3f4b79ec-6533-419b-ab33-135210c638e0",
+      "uuid": "7e9dd2b4-acf8-4b1d-b35b-4c9b6b02d80f",
       "type": "http",
       "documentation": "",
-      "method": "get",
+      "method": "post",
       "endpoint": "api/citizen",
       "responses": [
         {
-          "uuid": "c4824efe-b23f-4610-85c0-881f3fb76e19",
-          "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"status\": 200,\n  \"message\": \"OK\",\n  \"errors\": null,\n  \"data\": [\n    {\n      \"id\": \"{{faker 'datatype.uuid'}}\",\n      \"identification\": \"{{faker 'datatype.number'}} min=1111111111 max=9999999999\",\n      \"firstName\": \"string\",\n      \"lastName\": \"string\",\n      \"code\": 0,\n      \"description\": \"string\",\n    },\n  ]\n}",
+          "uuid": "3975ad84-1b6b-4246-a8ec-f580d4c91cb9",
+          "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"message\": \"OK\",\n  \"status\": 200,\n  \"errors\": null,\n  \"data\": [\n    {\n      \"id\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\n      \"identification\": \"1703377489\",\n      \"firstname\": \"{{firstName}}\",\n      \"lastname\": \"{{lastName}}\",\n      \"conadisNumber\": {{ oneOf (array false 123456789) }},\n      \"maritalStatus\": \"SOLTERO\",\n      \"children\": [\n        {\"id\": \"3fa85f64-5717-4562-b3fc-2c963f64afa6\", \"firstname\": \"Pepe\", \"lastname\":\"Perez\"}\n      ]\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
-          "label": "",
-          "headers": [],
+          "label": "OK",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "*/*"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "45777fb0-2972-4cb9-8824-9e0cee646fc7",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "api/upload_documents",
+      "responses": [
+        {
+          "uuid": "c0aa94b1-322a-457d-b3e0-797e2b115f7e",
+          "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"message\": \"OK\",\n  \"status\": 200,\n  \"errors\": null,\n  \"data\": [{\"documents\": [\n    {\"name\": \"doc1\", \"status\": \"PENDIENTE\", \"type\": \"SOLTEROS_SIN_HIJOS\"}, \n    {\"name\": \"doc2\", \"status\": \"PENDIENTE\", \"type\": \"SOLTEROS_CON_HIJOS\"}, \n    {\"name\": \"doc3\", \"status\": \"PENDIENTE\", \"type\": \"DIVORCIADOS_CS_HIJOS\"}, \n    {\"name\": \"doc4\", \"status\": \"PENDIENTE\", \"type\": \"VIUDOS_CS_HIJOS\"}, \n    {\"name\": \"doc5\", \"status\": \"PENDIENTE\", \"type\": \"EXTRANJERO_RESIDENCIA_TEMPORAL\"}, \n    {\"name\": \"doc6\", \"status\": \"PENDIENTE\", \"type\": \"UNION_HECHO_CS_HIJOS\"}\n  ]}]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "OK",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "*/*"
+            }
+          ],
           "bodyType": "INLINE",
           "filePath": "",
           "databucketID": "",
@@ -2909,7 +2947,11 @@
     },
     {
       "type": "route",
-      "uuid": "3f4b79ec-6533-419b-ab33-135210c638e0"
+      "uuid": "7e9dd2b4-acf8-4b1d-b35b-4c9b6b02d80f"
+    },
+    {
+      "type": "route",
+      "uuid": "45777fb0-2972-4cb9-8824-9e0cee646fc7"
     }
   ],
   "proxyMode": true,
