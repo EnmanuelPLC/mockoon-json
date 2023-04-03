@@ -2921,7 +2921,7 @@
       "responses": [
         {
           "uuid": "08e05fb7-bf1c-4c81-bc71-4126dce00803",
-          "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"message\": \"OK\",\n  \"status\": 200,\n  \"errors\": null,\n  \"data\": [\n    {\n      nut: \"MK00023\",\n      documentType: \"Registro de capitulaciones matrimoniales\",\n      dateOfAssignment: \"10/02/2023\",\n      solutionDate: \"20/03/2023\",\n      nuiOwnerDocument: \"1111111111\",\n      documentOwnerName: \"Luis Pérez Pérez\",\n      status: \"COMPLETADO\"\n    }\n  ]\n}",
+          "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"message\": \"OK\",\n  \"status\": 200,\n  \"errors\": null,\n  \"data\": [\n    {\n      \"nut\": \"MK00023\",\n      \"documentType\": \"Registro de capitulaciones matrimoniales\",\n      \"dateOfAssignment\": \"10/02/2023\",\n      \"solutionDate\": \"20/03/2023\",\n      \"nuiOwnerDocument\": \"1111111111\",\n      \"documentOwnerName\": \"Luis Pérez Pérez\",\n      \"status\": \"COMPLETADO\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "OK",
