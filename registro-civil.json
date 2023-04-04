@@ -308,7 +308,7 @@
     {
       "uuid": "21df8825-5297-4b65-a674-4fa19b8f4968",
       "name": "Service",
-      "collapsed": true,
+      "collapsed": false,
       "children": [
         {
           "type": "route",
@@ -365,6 +365,10 @@
         {
           "type": "route",
           "uuid": "a40a8320-ea95-40b0-a19b-d7f530cf159e"
+        },
+        {
+          "type": "route",
+          "uuid": "4dc70d5a-45f1-4af9-a5d1-0fe21111e0a6"
         }
       ]
     }
@@ -2958,6 +2962,34 @@
       "responses": [
         {
           "uuid": "165404e8-39ca-4cc8-bd8a-6798958d896c",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "4dc70d5a-45f1-4af9-a5d1-0fe21111e0a6",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "api/certificate_digital",
+      "responses": [
+        {
+          "uuid": "8885db23-dc1d-4173-a6ed-6b698c819404",
           "body": "{}",
           "latency": 0,
           "statusCode": 200,
