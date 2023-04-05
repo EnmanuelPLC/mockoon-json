@@ -369,6 +369,10 @@
         {
           "type": "route",
           "uuid": "4dc70d5a-45f1-4af9-a5d1-0fe21111e0a6"
+        },
+        {
+          "type": "route",
+          "uuid": "e8e1baa1-c0e5-41cb-afef-11c26264a9da"
         }
       ]
     }
@@ -2990,6 +2994,34 @@
       "responses": [
         {
           "uuid": "8885db23-dc1d-4173-a6ed-6b698c819404",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "e8e1baa1-c0e5-41cb-afef-11c26264a9da",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "api/birth-registration-abroad",
+      "responses": [
+        {
+          "uuid": "17d1faa9-ed64-4874-86a2-9a609db9840c",
           "body": "{}",
           "latency": 0,
           "statusCode": 200,
