@@ -867,7 +867,7 @@
       "responses": [
         {
           "uuid": "928403cd-faec-4ee3-9ead-895dab4c2940",
-          "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"message\": \"OK\",\n  \"status\": 200,\n  \"errors\": null,\n  \"data\": [\n    {{#repeat 50}}\n     {\n    \"id\": \"{{faker 'datatype.uuid'}}\",\n    \"email\": \"{{faker 'internet.email'}}\",\n    \"firstname\": \"{{faker 'name.firstName'}}\",\n    \"lastname\": \"{{faker 'name.lastName'}}\"\n    \"identification\": \"{{faker 'datatype.number' min=1100000000 max=9915875791}}\"\n  }\n    {{/repeat}}\n  ]\n}",
+          "body": "{\n  \"timestamp\": \"{{now 'd-MM-YYYY HH:mm:ss z'}}\",\n  \"message\": \"OK\",\n  \"status\": 200,\n  \"errors\": null,\n  \"data\": [\n    {{#repeat 50}}\n     {\n    \"id\": \"{{faker 'datatype.uuid'}}\",\n    \"email\": \"{{faker 'internet.email'}}\",\n    \"firstname\": \"{{faker 'name.firstName'}}\",\n    \"lastname\": \"{{faker 'name.lastName'}}\",\n    \"identification\": \"{{faker 'datatype.number' min=1100000000 max=9915875791}}\"\n  }\n    {{/repeat}}\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
